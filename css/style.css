@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    user-select: none;
+}
+:root{
+    --first:#05407b;
+    --second : #84b795;
+    --third:white;
+    --fourth:black;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background: var(--third);
+}
+.shadow{
+    box-shadow: 10px 2px 10px 10px var(--first);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+.nav .list ul{
+    display: flex;
+}
+.nav .list ul li{
+    margin-left: 4rem;
+}
+.nav .logo a{
+    color: var(--first);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.nav .list ul li a{
+    font-size: 1.3rem;
+    color: var(--fourth);
+}
+.nav .list ul li a:hover{
+    border-bottom: 1px solid var(--first);
+}
+.home{
+    background-image: linear-gradient(rgba(5,64,123,0.9),rgba(5,64,123,0.9)) , url(/images/work.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.home .texts{
+    width: 70%;
+   margin-top: 5rem;
+}
+.home .texts h1{
+    color: var(--third);
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+.home .texts p{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border: 1px solid var(--first);
+    padding: 1rem;
+    box-shadow: 1px 2px 10px 8px var(--first);
+    color: var(--third);
+}
+.charik{
+    display: flex;
+    justify-content: center;
+    gap: 25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.chariki{
+    display: flex;
+    gap: 1rem;
+}
+.chariki h4{
+    margin-top: .5rem;
+}
+.menu{
+    display: none;
+}
+.section-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--first);
+    margin-bottom: 4rem;
+    height: 5rem;
+    color: var(--third);
+}
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 8rem;
+    margin-bottom: 4rem;
+    gap: 12rem;
+}
+.description-image{
+    background:linear-gradient(rgba(5,64,123,0.5),rgba(5,64,123,0.5)) , url(/images/young-adults-meeting-up-to-study.jpg) ;
+    background-position: center;
+    background-size: cover;
+    height: 22rem;
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--third);
+    border-radius: 20px;
+}
+.description-image1{
+    background:linear-gradient(rgba(5,64,123,0.5),rgba(5,64,123,0.5)) , url(/images/beautiful-day-at-the-campus.jpg) ;
+    background-position: center;
+    background-size: cover;
+    height: 22rem;
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--third);
+    border-radius: 20px;
+}
+.description-title p{
+    font-size: 2rem;
+}
+.classes{
+    background: var(--first);
+    width: 100%;
+    height: 190vh;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.right-side{
+    margin-top: 10rem;
+    color: var(--second);
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.left-side{
+    margin-top: 10rem;
+    color: var(--third);
+    font-size: 4rem;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.left-side .levels{
+    border-bottom: 1px solid var(--third);
+}
+.left-side ul li:hover{
+    border-bottom: 2px solid var(--second);
+}
+.left-side .primaire {
+    position: absolute;
+    right: -100%;
+    margin-top: 2rem;
+    background: var(--first);
+    width: 25%;
+    transition: 1s ease-in-out;
+}
+.left-side .cem-years {
+    position: absolute;
+    right: -100%;
+    margin-top: 2rem;
+    background: var(--first);
+    width: 20%;
+    
+    transition: 1s ease-in-out;
+}
+.left-side .secondary-years {
+    position: absolute;
+    right: -100%;
+    margin-top: 2rem;
+    background: var(--first);
+    width: 20%;
+    
+    transition: 1s ease-in-out;
+}
+.left-side .show-years{
+    right: 75%;
+}
+.special-title{
+    margin: 5rem 4.5rem;
+    font-size: 3.5rem;
+    color: var(--second);
+    
+}
+.special-offers{
+    display: flex;
+    gap: 5rem;
+    padding-right: 4rem;
+}
+.right-up{
+    background:linear-gradient(rgba(5,64,123,0.5),rgba(5,64,123,0.9)), url(/images/book-in-library-with-open-textbook.jpg) ;
+    background-position:center ;
+    background-size: cover;
+    height: 15rem;
+    border-radius: 15px;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--third);
+}
+.right-down{
+    background:linear-gradient(rgba(95, 114, 133, 0.5),rgba(5,64,123,0.9)), url(/images/medium-shot-smiley-woman-working.jpg) ;
+    background-position:center ;
+    background-size: cover;
+    height: 15rem;
+    border-radius: 15px;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--third);
+    margin-top: 2rem;
+}
+.special-left{
+    background:linear-gradient(rgba(5,64,123,0.5),rgba(5,64,123,0.9)), url(/images/senior-male-professor-explaining-and-writing-on-green-chalkboard.jpg) ;
+    background-position:center ;
+    background-size: cover;
+    height: 32rem;
+    border-radius: 15px;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--third);
+}
+.subscribe{
+    background:linear-gradient(to left,rgba(132, 183, 149, 0.9),rgba(132, 183, 149, 0.5)),url(/images/row-of-students-doing-an-exam.jpg) ;
+    background-position: center;
+    background-size: cover;
+    height: 20rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--third);
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+.contacts{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.form form input{
+    height: 4rem;
+    width: 25rem;
+    border: none;
+    border-bottom: 2px solid var(--first);
+}
+.form form .area{
+    height: 6rem;
+}
+.form form input:focus{
+    outline: none;
+    
+}
+.form .submit{
+    background: var(--first);
+    color: var(--third);
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.form .submit:hover{
+    opacity: 0.9;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.social i{
+    font-size: 5rem;
+    cursor: pointer;
+}
+.social i:hover{
+    color: var(--first);
+}
+
+.form form input::placeholder{
+    padding: 2rem;
+    font-weight: bolder;
+    color: var(--fourth);
+}
+.form-photo .email{
+    font-size: 3rem;
+    color: var(--first);
+    font-weight: bolder;
+}
+.form-photo .istimara{
+    margin-bottom: 2rem;
+    font-weight: bolder;
+}
+footer{
+    background: var(--first);
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 50%;
+    align-items: center;
+}
+.footer-right{
+    flex-basis: 50%;
+    line-height: 4rem;
+}
+.footer-right a{
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 4rem;
+}
+.footer-right p{
+    line-height: 2rem;
+    color: white;
+    font-weight: bolder;
+}
+.footer-left .email{
+    color: white;
+    font-size: 1.5rem;
+}
+.footer-left i{
+    font-size: 1.5rem;
+    color: white;
+}
+.footer-left i:hover{
+    color: var(--second);
+}
+@media screen and (max-width: 1080px) {
+   .menu{
+       display: block;
+       font-size: 4rem;
+       margin-top: 1rem;
+   }
+   .header .logo a{
+       font-size: 4rem;
+   }
+   .nav .list{
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    background: var(--first);
+    height: 100vh;
+    width: 100vh;
+    transition: .5s ease-in-out;
+   }
+   .nav .show{
+       left: -300%;
+   }
+   .nav .list ul{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+    margin-right: 25rem;
+    gap: 8rem;
+    
+}
+.nav .list ul li a{
+    color: var(--third);
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.nav .list ul li a:hover{
+    border-bottom: 1px solid var(--third);
+}
+.charik{
+    flex-direction: column;
+    gap: 3rem;
+    margin-right: 15rem;
+}
+.charik h4{
+    font-size: 2rem;
+}
+.charik img{
+    width: 100px;
+}
+.description{
+    flex-direction: column;
+    gap: 3rem;
+}
+.description p{
+    font-size: 4rem;
+}
+.section-title{
+    font-size: 2rem;
+}
+.center{
+    flex-direction: column;
+}
+.right-side{
+    margin-right: 7rem;
+}
+.left-side .cem-years{
+    margin-top: 6rem;
+    margin-left: 4rem;
+    width: 50rem;
+    height: 100%;
+
+}
+.left-side .secondary-years{
+    margin-top: 6rem;
+    margin-left: 4rem;
+    width: 50rem;
+    height: 100%;
+
+}
+.left-side .primaire{
+    margin-top: 6rem;
+    margin-left: 4rem;
+    width: 50rem;
+    height: 100%;
+}
+.left-side .show-years{
+    right: 7%;
+}
+.special-offers{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacts{
+    flex-direction: column;
+}
+.form{
+    margin-top: 2rem;
+}
+.form form input{
+    width: 50rem;
+    height: 10rem;
+}
+.form form .area{
+    height: 15rem;
+}
+.form .submit{
+    font-size: 2rem;
+}
+.form form input::placeholder{
+    font-size: 2rem;
+}
+footer{
+    flex-direction: column;
+    height: 20rem;
+}
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.footer-right p{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+  }
