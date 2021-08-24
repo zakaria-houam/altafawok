@@ -55,7 +55,7 @@ li{
     border-bottom: 1px solid var(--first);
 }
 .home{
-    background-image: linear-gradient(rgba(5,64,123,0.9),rgba(5,64,123,0.9)) , url(/images/work.jpg);
+    background-image: linear-gradient(rgba(5,64,123,0.9),rgba(5,64,123,0.9)) , url(./images/work.jpg);
     background-position: center;
     background-size: cover;
     height: 100%;
@@ -119,7 +119,7 @@ li{
     gap: 12rem;
 }
 .description-image{
-    background:linear-gradient(rgba(5,64,123,0.5),rgba(5,64,123,0.5)) , url(/images/young-adults-meeting-up-to-study.jpg) ;
+    background:linear-gradient(rgba(5,64,123,0.5),rgba(5,64,123,0.5)) , url(./images/young-adults-meeting-up-to-study.jpg) ;
     background-position: center;
     background-size: cover;
     height: 22rem;
@@ -131,7 +131,7 @@ li{
     border-radius: 20px;
 }
 .description-image1{
-    background:linear-gradient(rgba(5,64,123,0.5),rgba(5,64,123,0.5)) , url(/images/beautiful-day-at-the-campus.jpg) ;
+    background:linear-gradient(rgba(5,64,123,0.5),rgba(5,64,123,0.5)) , url(../images/medium-shot-smiley-woman-working.jpg) ;
     background-position: center;
     background-size: cover;
     height: 22rem;
